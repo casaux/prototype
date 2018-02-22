@@ -11,6 +11,16 @@ input,select,option,.button,hr{
 width:300px;
 }
 
+.guidance{
+	
+	font-size:18px;
+}
+
+.sub{
+	font-size:12px;	
+	
+}
+
 hr{
 	height:1px;
 	background:#7f7f7f;

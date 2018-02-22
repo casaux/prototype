@@ -11,7 +11,21 @@
     
     <script src="jquery.min.js"></script>
 
-   
+   <script type="text/javascript">
+	
+	
+	$(document).ready(function(){
+
+		var email = location.hash.substring(1,location.hash.length);
+		
+		if(!email || email==""){
+			email = "test@test.com.au";
+		}
+		
+		$("#email").html(email);
+		
+	});
+	</script>
 
     
 </head>
@@ -27,35 +41,17 @@
 		
 	<div id="content">
 	
-		<h1>Welcome to CASA online services</h1>
+		<h1>Create an account</h1>
+		
+		<p class="guidance">We've sent an email to <span id="email"></span> with a verification code. Please enter the code below to continue.</p>
+		
 
-		<p class="guidance">
-		
-		Login or create an account to apply an ARN (individuals only) or edit your details and access other CASA services.
-			
-		</p>
-		
-	
 		<label>
-			<span>Email address or ARN</span>
+			<span>Verification code</span>
 			<input type="text">
 		</label>
 		
-		
-		<label>
-			<span>Password</span>
-			<input type="password">
-		</label>
-		
-		<p class="button">Sign in</p>
-		
-		<p class="nulllink">Problems signing in?</p>
-		
-		<hr />
-		
-		<h2>Not registered?</h2>
-		
-		<a href="portal2.html" class="button secondary">Create account</a>
+		<a class="button" href="portal4.html">Next</a>
 		
 	</div>
 	

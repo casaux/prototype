@@ -11,7 +11,20 @@
     
     <script src="jquery.min.js"></script>
 
-   
+   <script type="text/javascript">
+	
+	
+	$(document).ready(function(){
+
+		$(".button").bind( "click", function() {
+			
+			
+			location.href="portal3.html#"+$("input").val();
+			
+		});
+		
+	});
+	</script>
 
     
 </head>
@@ -27,35 +40,14 @@
 		
 	<div id="content">
 	
-		<h1>Welcome to CASA online services</h1>
+		<h1>Create an account</h1>
 
-		<p class="guidance">
-		
-		Login or create an account to apply an ARN (individuals only) or edit your details and access other CASA services.
-			
-		</p>
-		
-	
 		<label>
-			<span>Email address or ARN</span>
+			<span>Email</span>
 			<input type="text">
 		</label>
 		
-		
-		<label>
-			<span>Password</span>
-			<input type="password">
-		</label>
-		
-		<p class="button">Sign in</p>
-		
-		<p class="nulllink">Problems signing in?</p>
-		
-		<hr />
-		
-		<h2>Not registered?</h2>
-		
-		<a href="portal2.html" class="button secondary">Create account</a>
+		<p class="button" href="portal3.html">Next</p>
 		
 	</div>
 	
