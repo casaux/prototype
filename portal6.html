@@ -15,12 +15,15 @@
 	
 	
 	$(document).ready(function(){
-		$(".button").bind( "click", function() {
+		var firstName = location.hash.substring(1,location.hash.length);
+		
+		if(firstName.length > 0){
 			
+			firstName=", "+firstName;
 			
-			location.href="portal5.html#"+$("#CASAname").val();
-			
-		});
+		}
+		
+		$("#firstName").html(firstName);	
 		
 	});
 	</script>
@@ -39,41 +42,26 @@
 		
 	<div id="content">
 	
-		<h1>Create an account</h1>
 		
-
-		<label>
-			<span>First name</span>
-			<input id="CASAname" type="text">
-		</label>
+		<h1>Aviation Reference Number application</h1>
 		
-		<label>
-			<span>Last name</span>
-			<input type="text">
-		</label>
 		
-		<label>
-			<span>Password</span>
-			<input type="password">
-		</label>		
+		<h2>Personal details</h2>
 		
-			
-		<p class="sub">Your password must be at least seven characters and<br /> include at least one number</p>
+		<p>You are applying as <strong>Bob Furzer</strong>.</p>
+		
+		<p>This name must exactly match the name on your identification. If Bob Furzer doesn’t match what’s on your identification, <a>please update your name</a>.</p>
+		
+		<p><strong>Have you ever been known by a previous name?</strong></p>
 		
 		<label>
-			<span>Confirm password</span>
-			<input type="password">
-		</label>	
-		
-		
-		
-		<label>
-		<input type="checkbox">I agree to the <a>terms and conditions</a> of the<br /> CASA online portal
+			<input type="radio" value="0" name="previous" checked="checked"> No
+			<br style="clear:both" />
+			<input type="radio" value="1" name="previous"> Yes
 		</label>
 		
 		
-		
-		<p class="button" href="portal5.html">Next</p>
+		<a class="button" href="portal7.html">Next</a>
 		
 	</div>
 	

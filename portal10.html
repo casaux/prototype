@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+	<title>CASA Online Portal</title>
+	
+    <!--link rel="stylesheet" href="style.css"-->
+    <link rel="stylesheet" href="style.css">
+   
+    
+    <script src="jquery.min.js"></script>
+
+   <script type="text/javascript">
+	
+	
+	$(document).ready(function(){
+		var firstName = location.hash.substring(1,location.hash.length);
+		
+		if(firstName.length > 0){
+			
+			firstName=", "+firstName;
+			
+		}
+		
+		$("#firstName").html(firstName);	
+		
+	});
+	</script>
+
+    
+</head>
+<body>
+
+<div id="wrapper">
+
+	<div id="header">
+			<div id="inner-header">
+				<img src="casa.png" height="116" />
+			</div>
+	</div>
+		
+	<div id="content">
+	
+		
+		<h1>Aviation Reference Number application</h1>
+		
+		
+		<h2>Secondary identification</h2>
+		
+		
+		
+		<label>
+			<input type="radio" value="0" name="previous" checked="checked"> Australian drivers licence
+			<br style="clear:both" />
+			<br />
+			
+			
+			
+		
+			
+			<input type="radio" value="1" name="previous"> Current licence or permit (Government
+Issued)<br style="clear:both" /><br />
+			<input type="radio" value="1" name="previous">Working with children / teachers registration
+card<br style="clear:both" /><br />
+			<input type="radio" value="1" name="previous"> Aviation Security Identification Card /
+Maritime Security Identification Card<br style="clear:both" /><br />
+			
+			
+			
+			
+			
+			
+			<input type="radio" value="1" name="previous">Public Employee Photo ID
+(Government issued)<br style="clear:both" /><br />
+			
+			
+			<input type="radio" value="1" name="previous">Department of Veteran Affairs Card<br style="clear:both" /><br />
+			
+			
+			
+			<input type="radio" value="1" name="previous">Centerlink Pensioner Concession Card
+or Health Care Card<br style="clear:both" /><br />
+			
+			
+<input type="radio" value="1" name="previous">Current Tertiary Education Institue Photo ID<br style="clear:both" /><br />
+			
+			
+			<input type="radio" value="1" name="previous">Reference from a Doctor (must have known
+the applicant for a period of at least 
+12 months)<br style="clear:both" /><br />
+			
+		</label>
+		
+		
+		<a class="button" href="portal11.html">Next</a>
+		
+	</div>
+	
+	<div id="footer">
+		<div id="inner-footer">
+				<img src="footer.png" height="399" />
+			</div>
+	</div>
+	
+	
+</div>
+	
+	
+	
+	
+	
+<body>
+	
+</html>

@@ -15,12 +15,15 @@
 	
 	
 	$(document).ready(function(){
-		$(".button").bind( "click", function() {
+		var firstName = location.hash.substring(1,location.hash.length);
+		
+		if(firstName.length > 0){
 			
+			firstName=", "+firstName;
 			
-			location.href="portal5.html#"+$("#CASAname").val();
-			
-		});
+		}
+		
+		$("#firstName").html(firstName);	
 		
 	});
 	</script>
@@ -39,41 +42,19 @@
 		
 	<div id="content">
 	
-		<h1>Create an account</h1>
 		
+		<img src="success.png" />
+		
+		<h2>Welcome to the CASA Serlf Service Portal<span id="firstName"></span> </h2>
+		
+		<p class="guidance">To access CASA Services you'll need to apply for an Aviation Reference Number (ARN).</p>
+		<p class="guidance">You will be required to provide 100 points of identification to be issued an ARN.</p>
 
-		<label>
-			<span>First name</span>
-			<input id="CASAname" type="text">
-		</label>
+<p class="guidance">Only individuals can apply for an ARN here. If you are organisation, <a>please apply here</a>.</p>
+
+		<br /><br />
 		
-		<label>
-			<span>Last name</span>
-			<input type="text">
-		</label>
-		
-		<label>
-			<span>Password</span>
-			<input type="password">
-		</label>		
-		
-			
-		<p class="sub">Your password must be at least seven characters and<br /> include at least one number</p>
-		
-		<label>
-			<span>Confirm password</span>
-			<input type="password">
-		</label>	
-		
-		
-		
-		<label>
-		<input type="checkbox">I agree to the <a>terms and conditions</a> of the<br /> CASA online portal
-		</label>
-		
-		
-		
-		<p class="button" href="portal5.html">Next</p>
+		<a class="button" href="portal6.html">Begin ARN application</a>
 		
 	</div>
 	

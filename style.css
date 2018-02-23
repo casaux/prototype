@@ -41,6 +41,7 @@ hr{
 	width:100%;
 	height:116px;
 	background:#0080a2;
+	clear:both;
 }
 
 #footer{
@@ -59,6 +60,11 @@ hr{
 	height:100%;
 	min-height:600px;
 	margin-top:40px;
+	margin-bottom:40xp;
+}
+
+#content p{
+	width:60%;
 }
 
 
@@ -97,6 +103,13 @@ input[type=text],input[type=password]{
 	padding:8px;
 }
 
+input[type=checkbox], input[type=radio]{
+	
+	float:left;
+	height:16px;
+	width:16px;
+}
+
 a, .nulllink{
 	color:#0080A2;
 	cursor:default;
@@ -118,6 +131,7 @@ a:hover, .nulllink:hover{
 	text-align:center;
 	display:block;
 	text-decoration:none;
+	width:300px !important;
 }
 
 .button.secondary{

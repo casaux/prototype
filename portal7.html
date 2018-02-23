@@ -15,12 +15,15 @@
 	
 	
 	$(document).ready(function(){
-		$(".button").bind( "click", function() {
+		var firstName = location.hash.substring(1,location.hash.length);
+		
+		if(firstName.length > 0){
 			
+			firstName=", "+firstName;
 			
-			location.href="portal5.html#"+$("#CASAname").val();
-			
-		});
+		}
+		
+		$("#firstName").html(firstName);	
 		
 	});
 	</script>
@@ -39,41 +42,52 @@
 		
 	<div id="content">
 	
-		<h1>Create an account</h1>
 		
-
-		<label>
-			<span>First name</span>
-			<input id="CASAname" type="text">
-		</label>
+		<h1>Aviation Reference Number application</h1>
+		
+		
+		<h2>Residential address</h2>
+		
+		
 		
 		<label>
-			<span>Last name</span>
+			<span>Address line 1</span>
 			<input type="text">
-		</label>
-		
-		<label>
-			<span>Password</span>
-			<input type="password">
-		</label>		
-		
-			
-		<p class="sub">Your password must be at least seven characters and<br /> include at least one number</p>
-		
-		<label>
-			<span>Confirm password</span>
-			<input type="password">
 		</label>	
 		
+		<label>
+			<span>Address line 2</span>
+			<input type="text">
+		</label>			
 		
 		
 		<label>
-		<input type="checkbox">I agree to the <a>terms and conditions</a> of the<br /> CASA online portal
+			<span>Suburb</span>
+			<input type="text">
+		</label>			
+		
+		
+		<label>
+			<span>State</span>
+			<input type="text">
+		</label>			
+		
+		
+		<label>
+			<span>Postcode</span>
+			<input type="text">
+		</label>			
+		
+		<p><strong>Is your postal address different to your residential address?</strong></p>
+		
+		<label>
+			<input type="radio" value="0" name="previous" checked="checked"> No
+			<br style="clear:both" />
+			<input type="radio" value="1" name="previous"> Yes
 		</label>
 		
 		
-		
-		<p class="button" href="portal5.html">Next</p>
+		<a class="button" href="portal8.html">Next</a>
 		
 	</div>
 	

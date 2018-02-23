@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+	<title>CASA Online Portal</title>
+	
+    <!--link rel="stylesheet" href="style.css"-->
+    <link rel="stylesheet" href="style.css">
+   
+    
+    <script src="jquery.min.js"></script>
+
+   <script type="text/javascript">
+	
+	
+	$(document).ready(function(){
+		var firstName = location.hash.substring(1,location.hash.length);
+		
+		if(firstName.length > 0){
+			
+			firstName=", "+firstName;
+			
+		}
+		
+		$("#firstName").html(firstName);	
+		
+	});
+	</script>
+
+    
+</head>
+<body>
+
+<div id="wrapper">
+
+	<div id="header">
+			<div id="inner-header">
+				<img src="casa.png" height="116" />
+			</div>
+	</div>
+		
+	<div id="content">
+	
+		
+		<h1>Aviation Reference Number application</h1>
+		
+		
+		<h2>Primary identification - Australian passport details</h2>
+		
+		
+		
+		<label>
+			<span>First name</span>
+			<input type="text" value="Bob" disabled="disabled">
+		</label>	
+				
+		<label>
+			<span>Last name</span>
+			<input type="text" value="Furzer" disabled="disabled">
+		</label>	
+		
+		<p style="margin-bottom:8px">Date of birth</p>
+		
+		<label style="float:left;margin-right:10px;margin-bottom: 4px;">
+			<span class="sub">Date</span>
+			<input type="text" value="" style="width:60px;">
+		</label>	
+		<label style="float:left;margin-right:10px;margin-top:0;margin-bottom: 4px;">
+			<span class="sub">Month</span>
+			<input type="text" value="" style="width:60px;">
+		</label>		
+		<label style="float:left;margin-top:0;margin-bottom: 4px;">
+			<span class="sub">Year</span>
+			<input type="text" value="" style="width:100px;">
+		</label>		
+		
+		
+		
+		<p style="clear:both;margin-top:6px;" class="sub">For example, 12 01 1980</p>
+		
+		
+		
+		
+			<p>Gender</p>
+		
+		<label>
+			<input type="radio" value="0" name="previous"> Female
+			<br style="clear:both" />
+			<input type="radio" value="1" name="previous"> Male
+		</label>
+		
+		
+		
+		
+		
+		
+		
+		
+		<p style="margin-bottom:8px">Expiry date</p>
+		
+		<label style="float:left;margin-right:10px;margin-bottom: 4px;">
+			<span class="sub">Date</span>
+			<input type="text" value="" style="width:60px;">
+		</label>	
+		<label style="float:left;margin-right:10px;margin-top:0;margin-bottom: 4px;">
+			<span class="sub">Month</span>
+			<input type="text" value="" style="width:60px;">
+		</label>		
+		<label style="float:left;margin-top:0;margin-bottom: 4px">
+			<span class="sub">Year</span>
+			<input type="text" value="" style="width:100px;">
+		</label>	
+		<p style="clear:both;margin-top:6px;" class="sub">For example, 12 01 2020</p>
+		
+		<a class="button" href="portal10.html">Next</a>
+		
+	</div>
+	
+	<div id="footer">
+		<div id="inner-footer">
+				<img src="footer.png" height="399" />
+			</div>
+	</div>
+	
+	
+</div>
+	
+	
+	
+	
+	
+<body>
+	
+</html>
