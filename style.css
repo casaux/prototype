@@ -30,6 +30,9 @@ hr{
 	clear:both;
 	margin:48px 0 32px 0;
 	width:320px;
+	float:none;
+	text-align:left;
+
 }
 
 #wrapper{
@@ -46,6 +49,7 @@ hr{
 
 #footer{
 	background:#4c4c4c;	
+	margin-top: 20px;
 }
 
 #inner-header,#inner-footer{
@@ -60,7 +64,7 @@ hr{
 	height:100%;
 	min-height:600px;
 	margin-top:40px;
-	margin-bottom:40xp;
+	margin-bottom:40px;
 }
 
 #content p{
